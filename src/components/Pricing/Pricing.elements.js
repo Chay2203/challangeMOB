@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 export const PricingSection = styled.div`
@@ -22,8 +21,7 @@ export const PricingWrapper = styled.div`
   }
 `;
 
-
-export const Button = styled.button`
+export const ExternalButton = styled.a`
   border-radius: 10px;
   background: ${({ primary }) => (primary ? '#fff' : '#fff')};
   white-space: nowrap;
@@ -35,11 +33,21 @@ export const Button = styled.button`
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background: #ddd;
+    transition: all 0.3s ease-out;
+  }
+
   @media screen and (max-width: 960px) {
     width: 100%;
+    text-align: center;
+    padding: 12px 0;
   }
 `;
-
 
 
 export const PricingHeading = styled.h1`
@@ -54,7 +62,7 @@ export const PricingContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 100px;
-  border-radius: 8px; /* Adjust the radius as needed */
+  border-radius: 8px;
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -65,15 +73,14 @@ export const PricingContainer = styled.div`
   }
 `;
 
-
-export const PricingCard = styled(Link)`
+export const PricingCard = styled.div`
   background: #101522;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
   width: 280px;
-  height: 550px;
+  height: 600px;
   text-decoration: none;
   border-radius: 25px;
-  overflow: hidden; /* Ensure blur doesn't overflow */
+  overflow: hidden;
   &:hover {
     transform: scale(1.06);
     transition: all 0.3s ease-out;
@@ -85,14 +92,8 @@ export const PricingCard = styled(Link)`
       transform: none;
     }
   }
-
-  /* Apply blur filter conditionally */
-  ${props =>
-    props.blur &&
-    css`
-      filter: blur(10px);
-    `}
 `;
+
 export const PricingCardInfo = styled.div`
   display: flex;
   flex-direction: column;
@@ -103,10 +104,8 @@ export const PricingCardInfo = styled.div`
   font-family: 'Poppins', sans-serif;
 `;
 
-
 export const PricingCardIcon = styled.div`
   margin: 16px 0;
-  
 `;
 
 export const PricingCardPlan = styled.h3`
@@ -115,11 +114,18 @@ export const PricingCardPlan = styled.h3`
   font-family: 'Poppins', sans-serif;
 `;
 
+export const OriginalPrice = styled.h4`
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: line-through;
+  color: #CA2C2A; /* Color for the original price */
+`;
+
+
 export const PricingCardCost = styled.h4`
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
 `;
-
 
 export const PricingCardFeatures = styled.ul`
   margin: 16px 0;

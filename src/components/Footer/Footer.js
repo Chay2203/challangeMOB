@@ -30,13 +30,10 @@ function Footer() {
     <FooterContainer>
       <FooterSubscription>
         <FooterSubHeading>
-          For upcoming courses/challenges from your beloved creators
+          Contact Us
         </FooterSubHeading>
-        <FooterSubText>You can unsubscribe at any time.</FooterSubText>
-        <Form>
-          <FormInput name='email' type='email' placeholder='Your Email' />
-          <Button primary style={{ background: '#fff', color: '#000000' }}>Subscribe</Button>
-        </Form>
+        <FooterSubText>harshith.presents@outlook.com</FooterSubText>
+        <FooterSubText>+91 7425882688</FooterSubText>
       </FooterSubscription>
       <SocialMedia>
         <SocialMediaWrap>

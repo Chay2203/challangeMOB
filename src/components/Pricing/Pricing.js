@@ -1,6 +1,5 @@
 import React from 'react';
-import { GiCrystalBars } from 'react-icons/gi';
-import { GiRock } from 'react-icons/gi';
+import { GiCrystalBars, GiRock } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import {
   PricingSection,
@@ -10,11 +9,12 @@ import {
   PricingCard,
   PricingCardInfo,
   PricingCardIcon,
+  OriginalPrice,
   PricingCardPlan,
   PricingCardCost,
   PricingCardFeatures,
-  PricingCardFeature, 
-  Button
+  PricingCardFeature,
+  ExternalButton // Use the new styled component for external links
 } from './Pricing.elements';
 
 const Pricing = () => {
@@ -22,15 +22,16 @@ const Pricing = () => {
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
+          <PricingHeading>Live Challenges</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
+            <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
                   <GiRock />
                 </PricingCardIcon>
                 <PricingCardPlan>BASIC</PricingCardPlan>
-                <PricingCardCost>₹99</PricingCardCost>
+                <OriginalPrice>₹699/-</OriginalPrice>
+                <PricingCardCost>₹99/-</PricingCardCost>
                 <PricingCardFeatures>
                   <PricingCardFeature>LinkedIn Cookbook</PricingCardFeature>
                   <PricingCardFeature>AI Linked Tool</PricingCardFeature>
@@ -40,9 +41,10 @@ const Pricing = () => {
                   <PricingCardFeature>Job Sheet Tracker</PricingCardFeature>
                   <PricingCardFeature>Webinar Recording</PricingCardFeature>
                   <PricingCardFeature>Job Search Templates</PricingCardFeature>
-                  
                 </PricingCardFeatures>
-                <Button primary>Enroll Now</Button>
+                <ExternalButton href="https://pages.razorpay.com/challengemobxharshith" target="_blank" primary>
+                  Enroll Now
+                </ExternalButton>
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>
