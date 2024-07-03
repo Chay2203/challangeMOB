@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Nav, NavbarContainer, NavLogo, NavIcon, HamburgerIcon, NavMenu, NavItem, NavLinks, NavItemBtn, NavBtnLink } from './Navbar.elements';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Button } from '../../globalStyles';
 
 // Import your image
 import yourLogoImage from '../../images/1.png';

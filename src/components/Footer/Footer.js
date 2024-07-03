@@ -20,7 +20,7 @@ import {
   SocialIcons,
   SocialIconLink
 } from './Footer.elements';
-import yourLogoImage from '../../images/removelogo.png';
+import yourLogoImage from '../../images/main.png';
 
 function Footer() {
 

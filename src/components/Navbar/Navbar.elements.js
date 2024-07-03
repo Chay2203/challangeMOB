@@ -12,12 +12,16 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 999;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 `;
 
 export const NavbarContainer = styled(Container)`
     display: flex;
     justify-content: space-between;
     height: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 `;
 
 export const NavLogo = styled(Link)`
@@ -28,6 +32,8 @@ export const NavLogo = styled(Link)`
     font-size: 2rem;
     display: flex;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 `;
 
 export const NavIcon = styled.img`
@@ -38,15 +44,17 @@ export const NavIcon = styled.img`
 
 export const HamburgerIcon = styled.div`
     display: none;
-
     @media screen and (max-width: 960px) {
         display: block;
+        color: #000000;
         position: absolute;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
-        cursor: pointer;   
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
 `;
 
@@ -55,7 +63,9 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
     @media screen and (max-width: 960px) {
         display: flex;
         flex-direction: column;
@@ -74,6 +84,8 @@ export const NavItem = styled.li`
     height: 80px;
     border-bottom: 2px solid transparent;
     border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 
     &:hover {
         border-bottom: 4px solid #000000;
@@ -95,12 +107,15 @@ export const NavLinks = styled(Link)`
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 
     @media screen and (max-width: 960px) {
         text-align: center;
         padding: 2rem;
         width: 100%;
         display: table;
+        color: #fff;
 
         &:hover {
             color: #4b59f7;
@@ -116,6 +131,8 @@ export const NavItemBtn = styled.li`
         align-items: center;
         width: 100%;
         height: 120px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
 `;
 
@@ -129,4 +146,6 @@ export const NavBtnLink = styled(Link)`
     width: 100%;
     border: none;
     outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 `;

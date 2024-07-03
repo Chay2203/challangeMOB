@@ -24,7 +24,7 @@ export const PricingWrapper = styled.div`
 
 
 export const Button = styled.button`
-  border-radius: 4px;
+  border-radius: 10px;
   background: ${({ primary }) => (primary ? '#fff' : '#fff')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
@@ -70,7 +70,7 @@ export const PricingCard = styled(Link)`
   background: #101522;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
   width: 280px;
-  height: 600px;
+  height: 550px;
   text-decoration: none;
   border-radius: 25px;
   overflow: hidden; /* Ensure blur doesn't overflow */
