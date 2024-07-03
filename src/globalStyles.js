@@ -41,21 +41,16 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#' : '#0467FB')};
+  background: ${({ primary }) => (primary ? '#000000' : '#000000')}; /* Always black */
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-  color: #fff;
+  color: #ffffff; /* White text */
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
   cursor: pointer;
   font-family: 'Poppins', sans-serif; 
   font-weight: bold; 
-  &:hover {
-    transition: all 0.3s ease-out;
-    background: ##000000;
-    background-color: ${({ primary }) => (primary ? '#000000' : '#000000')};
-  }
   @media screen and (max-width: 960px) {
     width: 100%;
   }

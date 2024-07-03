@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '../../globalStyles';
 import {
   FaInstagram,
   FaYoutube,
@@ -11,6 +10,7 @@ import {
   FooterSubText,
   FooterSubHeading,
   Form,
+  Button,
   FormInput,
   SocialMedia,
   SocialMediaWrap,
@@ -35,7 +35,7 @@ function Footer() {
         <FooterSubText>You can unsubscribe at any time.</FooterSubText>
         <Form>
           <FormInput name='email' type='email' placeholder='Your Email' />
-          <Button fontBig>Subscribe</Button>
+          <Button primary style={{ background: '#fff', color: '#000000' }}>Subscribe</Button>
         </Form>
       </FooterSubscription>
       <SocialMedia>

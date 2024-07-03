@@ -10,6 +10,24 @@ export const FooterContainer = styled.div`
   align-items: center;
 `;
 
+export const Button = styled.button`
+  border-radius: 4px;
+  background: ${({ primary }) => (primary ? '#fff' : '#fff')};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
+  color: #000000;
+  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
+
 export const FooterSubscription = styled.section`
   display: flex;
   flex-direction: column;

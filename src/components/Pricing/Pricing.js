@@ -1,9 +1,6 @@
 import React from 'react';
-import { Button } from '../../globalStyles';
-import { AiFillThunderbolt } from 'react-icons/ai';
 import { GiCrystalBars } from 'react-icons/gi';
-import { GiCutDiamond, GiRock } from 'react-icons/gi';
-import { GiFloatingCrystal } from 'react-icons/gi';
+import { GiRock } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import {
   PricingSection,
@@ -15,9 +12,9 @@ import {
   PricingCardIcon,
   PricingCardPlan,
   PricingCardCost,
-  PricingCardLength,
   PricingCardFeatures,
-  PricingCardFeature
+  PricingCardFeature, 
+  Button
 } from './Pricing.elements';
 
 const Pricing = () => {
@@ -63,7 +60,7 @@ const Pricing = () => {
                   <PricingCardFeature>Private WhatsApp Group</PricingCardFeature>
                   <PricingCardFeature>1 - 1  guidance call</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <Button primary style={{ background: '#fff', color: '#000000' }}>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>
