@@ -37,8 +37,10 @@ const Pricing = () => {
                   <HighlightedFeature>LinkedIn Cookbook</HighlightedFeature>
                   <HighlightedFeature>AI LinkedIn Tool</HighlightedFeature>
                   <HighlightedFeature>Daily Job Search Checklist</HighlightedFeature>
+                  <HighlightedFeature>2 Community Calls during Challenge</HighlightedFeature>
                   <PricingCardFeature>Passive Job Search Checklist</PricingCardFeature>
                   <PricingCardFeature>Profile Building Checklist</PricingCardFeature>
+                  <HighlightedFeature>Private WhatsApp Community</HighlightedFeature>
                   <HighlightedFeature>LinkedIn Templates for Job Search</HighlightedFeature>
                   <PricingCardFeature>Cold Email Templates for Job Search</PricingCardFeature>
                   <PricingCardFeature>Webinar Recording</PricingCardFeature>
