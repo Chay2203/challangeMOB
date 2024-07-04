@@ -4,7 +4,6 @@ import { Nav, NavbarContainer, NavLogo, NavIcon, HamburgerIcon, NavMenu, NavItem
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
-// Import your image
 import yourLogoImage from '../../images/1.png';
 
 function Navbar() {
@@ -36,7 +35,6 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        // Adjust button visibility based on window width
         if (window.innerWidth <= 960) {
             setButton(false);
         } else {

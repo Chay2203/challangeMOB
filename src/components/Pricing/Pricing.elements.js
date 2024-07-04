@@ -72,12 +72,18 @@ export const PricingContainer = styled.div`
     gap: 20px;
   }
 `;
+export const HighlightedFeature = styled.li`
+  font-family: 'Poppins', sans-serif;
+  color: #6fc276; /* Highlight color */
+  font-weight: bold;
+  font-size: 18px; /* Increase font size for highlight */
+`;
 
 export const PricingCard = styled.div`
   background: #101522;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  width: 280px;
-  height: 600px;
+  width: 480px;
+  height: 650px;
   text-decoration: none;
   border-radius: 25px;
   overflow: hidden;

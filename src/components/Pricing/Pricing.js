@@ -11,6 +11,7 @@ import {
   PricingCardIcon,
   OriginalPrice,
   PricingCardPlan,
+  HighlightedFeature,
   PricingCardCost,
   PricingCardFeatures,
   PricingCardFeature,
@@ -29,18 +30,20 @@ const Pricing = () => {
                 <PricingCardIcon>
                   <GiRock />
                 </PricingCardIcon>
-                <PricingCardPlan>BASIC</PricingCardPlan>
+                <PricingCardPlan>7 Day LinkedIn Challenge</PricingCardPlan>
                 <OriginalPrice>₹699/-</OriginalPrice>
                 <PricingCardCost>₹99/-</PricingCardCost>
                 <PricingCardFeatures>
-                  <PricingCardFeature>LinkedIn Cookbook</PricingCardFeature>
-                  <PricingCardFeature>AI Linked Tool</PricingCardFeature>
-                  <PricingCardFeature>Daily JS Checklist</PricingCardFeature>
-                  <PricingCardFeature>Private WhatsApp Group</PricingCardFeature>
-                  <PricingCardFeature>Pro JS Checklist</PricingCardFeature>
-                  <PricingCardFeature>Job Sheet Tracker</PricingCardFeature>
+                  <HighlightedFeature>LinkedIn Cookbook</HighlightedFeature>
+                  <HighlightedFeature>AI LinkedIn Tool</HighlightedFeature>
+                  <HighlightedFeature>Daily Job Search Checklist</HighlightedFeature>
+                  <PricingCardFeature>Passive Job Search Checklist</PricingCardFeature>
+                  <PricingCardFeature>Profile Building Checklist</PricingCardFeature>
+                  <HighlightedFeature>LinkedIn Templates for Job Search</HighlightedFeature>
+                  <PricingCardFeature>Cold Email Templates for Job Search</PricingCardFeature>
                   <PricingCardFeature>Webinar Recording</PricingCardFeature>
-                  <PricingCardFeature>Job Search Templates</PricingCardFeature>
+                  <PricingCardFeature>LinkedIn Workshop Slides</PricingCardFeature>
+                  <PricingCardFeature>+4 more</PricingCardFeature>
                 </PricingCardFeatures>
                 <ExternalButton href="https://pages.razorpay.com/challengemobxharshith" target="_blank" primary>
                   Enroll Now
