@@ -1,6 +1,6 @@
 import React from 'react';
-import { GiCrystalBars, GiRock } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
+import image from '../../images/2.png';
 import {
   PricingSection,
   PricingWrapper,
@@ -28,7 +28,7 @@ const Pricing = () => {
             <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiRock />
+                <img src={image} alt="icon" style={{ height: '100px', width: '100px' }} />
                 </PricingCardIcon>
                 <PricingCardPlan>7 Day LinkedIn Challenge</PricingCardPlan>
                 <OriginalPrice>₹699/-</OriginalPrice>

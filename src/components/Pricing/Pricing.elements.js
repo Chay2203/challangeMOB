@@ -72,6 +72,12 @@ export const PricingContainer = styled.div`
     gap: 20px;
   }
 `;
+
+export const PricingCardIconStyled = styled.div`
+  margin: 24px 0;
+`;
+
+
 export const HighlightedFeature = styled.li`
   font-family: 'Poppins', sans-serif;
   color: #6fc276; /* Highlight color */
@@ -83,7 +89,7 @@ export const PricingCard = styled.div`
   background: #101522;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
   width: 480px;
-  height: 650px;
+  height: 700px;
   text-decoration: none;
   border-radius: 25px;
   overflow: hidden;
